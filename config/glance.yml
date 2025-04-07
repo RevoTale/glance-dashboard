@@ -1,0 +1,96 @@
+pages:
+  - name: Home
+    # Optionally, if you only have a single page you can hide the desktop navigation for a cleaner look
+    # hide-desktop-navigation: true
+    columns:
+      - size: small
+        widgets:
+          - type: rss
+            limit: 10
+            collapse-after: 3
+            cache: 12h
+            feeds:
+              - url: https://notes.revotale.com/explore/rss.xml
+                title: notes
+                limit: 4
+              - url: https://medium.com/feed/@l-you
+                title: Medium
+                limit: 4
+              - url: https://www.reddit.com/user/rusted_love/.rss
+                title: Reddit
+                limit: 4
+      - size: full
+        widgets:
+          - type: group
+            widgets:
+              - type: repository
+                repository: RevoTale/next-scroll-restorer
+                pull-requests-limit: 5
+                issues-limit: 3
+                commits-limit: 3
+              - type: repository
+                repository: RevoTale/obsidian-folder-by-tags-distributor
+                pull-requests-limit: 5
+                issues-limit: 3
+                commits-limit: 3
+              - type: repository
+                repository: RevoTale/react-grecaptcha-v3
+                pull-requests-limit: 5
+                issues-limit: 3
+                commits-limit: 3
+          - type: server-stats
+            servers:
+              - type: local
+                name: Services
+
+      - size: small
+        widgets:
+
+          - type: monitor
+            cache: 1m
+            title: Services
+            sites:
+              - title: Root
+                url: https://revotale.com
+              - title: Notes
+                url: https://notes.revotale.com
+              - title: CMS
+                url: https://cms.revotale.com/admin
+              - title: Watcharr
+                url: https://tv.revotale.com
+
+          - type: releases
+            show-source-icon: true
+            cache: 1d
+            # Without authentication the Github API allows for up to 60 requests per hour. You can create a
+            # read-only token from your Github account settings and use it here to increase the limit.
+            # token: ...
+            repositories:
+              - glanceapp/glance
+              - go-gitea/gitea
+              - sbondCo/Watcharr
+              - RevoTale/next-scroll-restorer
+              - RevoTale/obsidian-folder-by-tags-distributor
+              - usememos/memos
+              - fish-shell/fish-shell
+              - pnpm/pnpm
+              - golang/go
+              - shadcn-ui/ui
+              - zed-industries/zed
+              - meilisearch/meilisearch
+              - payloadcms/payload
+
+  # Add more pages here:
+  # - name: Your page name
+  #   columns:
+  #     - size: small
+  #       widgets:
+  #         # Add widgets here
+
+  #     - size: full
+  #       widgets:
+  #         # Add widgets here
+
+  #     - size: small
+  #       widgets:
+  #         # Add widgets here
