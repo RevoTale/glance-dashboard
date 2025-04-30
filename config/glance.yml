@@ -6,7 +6,7 @@ pages:
       - size: small
         widgets:
           - type: rss
-            limit: 10
+            limit: 12
             collapse-after: 3
             cache: 12h
             feeds:
@@ -16,7 +16,7 @@ pages:
               - url: https://medium.com/feed/@l-you
                 title: Medium
                 limit: 4
-              - url: https://www.reddit.com/user/rusted_love/.rss
+              - url: https://www.reddit.com/user/you-l-you/.rss
                 title: Reddit
                 limit: 4
       - size: full
@@ -58,6 +58,8 @@ pages:
                 url: https://cms.revotale.com/admin
               - title: Watcharr
                 url: https://tv.revotale.com
+              - title: Analytics
+                url: https://revotale.com/stats/api/heartbeat
 
           - type: releases
             show-source-icon: true
@@ -66,6 +68,7 @@ pages:
             # read-only token from your Github account settings and use it here to increase the limit.
             # token: ...
             repositories:
+              - umami-software/umami
               - glanceapp/glance
               - go-gitea/gitea
               - sbondCo/Watcharr
