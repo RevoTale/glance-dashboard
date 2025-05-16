@@ -5,20 +5,57 @@ pages:
     columns:
       - size: small
         widgets:
-          - type: rss
-            limit: 12
-            collapse-after: 3
-            cache: 12h
-            feeds:
-              - url: https://notes.revotale.com/explore/rss.xml
-                title: notes
-                limit: 4
-              - url: https://medium.com/feed/@l-you
-                title: Medium
-                limit: 4
-              - url: https://www.reddit.com/user/you-l-you/.rss
-                title: Reddit
-                limit: 4
+          - type: monitor
+            cache: 1m
+            title: Services
+            sites:
+              - title: Root
+                url: https://revotale.com
+              - title: Notes
+                url: https://notes.revotale.com
+              - title: CMS
+                url: https://cms.revotale.com/admin
+              - title: Watcharr
+                url: https://tv.revotale.com
+              - title: Analytics
+                url: https://revotale.com/stats/api/heartbeat
+          - type: bookmarks
+            groups:
+              - title: Personal
+                links:
+                  - title: Notes
+                    url: https://notes.revotale.com
+                  - title: Watcharr
+                    url: https://tv.revotale.com
+                  - title: Admin
+                    url: https://cms.revotale.com/admin/login
+                  - title: Analytics
+                    url: https://revotale.com/stats/dashboard
+              - title: RevoTale profiles
+                color: 10 70 50
+                links:
+                  - title: X
+                    url: https://x.com/RevoTale
+                  - title: Website
+                    url: https://revotale.com
+                  - title: GitHub
+                    url: https://github.com/RevoTale
+                  - title: NPM Registry
+                    url: https://www.npmjs.com/~grisaia
+                  - title: Packagist
+                    url: https://packagist.org/users/grisaia/
+              - title: l-you Profiles
+                color: 200 50 50
+                links:
+                  - title: GitHub
+                    url: https://github.com/l-you
+                  - title: X
+                    url: https://x.com/x_l_you
+                  - title: Reddit
+                    url: https://www.reddit.com/user/you-l-you/
+                  - title: Medium
+                    url: https://medium.com/@l-you
+
       - size: full
         widgets:
           - type: group
@@ -46,21 +83,6 @@ pages:
       - size: small
         widgets:
 
-          - type: monitor
-            cache: 1m
-            title: Services
-            sites:
-              - title: Root
-                url: https://revotale.com
-              - title: Notes
-                url: https://notes.revotale.com
-              - title: CMS
-                url: https://cms.revotale.com/admin
-              - title: Watcharr
-                url: https://tv.revotale.com
-              - title: Analytics
-                url: https://revotale.com/stats/api/heartbeat
-
           - type: releases
             show-source-icon: true
             cache: 1d
@@ -82,7 +104,20 @@ pages:
               - zed-industries/zed
               - meilisearch/meilisearch
               - payloadcms/payload
-
+          - type: rss
+            limit: 12
+            collapse-after: 3
+            cache: 12h
+            feeds:
+              - url: https://notes.revotale.com/explore/rss.xml
+                title: notes
+                limit: 4
+              - url: https://medium.com/feed/@l-you
+                title: Medium
+                limit: 4
+              - url: https://www.reddit.com/user/you-l-you/.rss
+                title: Reddit
+                limit: 4
   # Add more pages here:
   # - name: Your page name
   #   columns:
