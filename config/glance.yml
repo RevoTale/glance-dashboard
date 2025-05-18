@@ -5,6 +5,25 @@ pages:
     columns:
       - size: small
         widgets:
+          - type: group
+            widgets:
+              - type: repository
+                repository: RevoTale/next-scroll-restorer
+                pull-requests-limit: 5
+                issues-limit: 3
+                commits-limit: 3
+              - type: repository
+                repository: RevoTale/obsidian-folder-by-tags-distributor
+                pull-requests-limit: 5
+                issues-limit: 3
+                commits-limit: 3
+              - type: repository
+                repository: RevoTale/react-grecaptcha-v3
+                pull-requests-limit: 5
+                issues-limit: 3
+                commits-limit: 3
+      - size: full
+        widgets:
           - type: monitor
             cache: 1m
             title: Services
@@ -55,30 +74,12 @@ pages:
                     url: https://www.reddit.com/user/you-l-you/
                   - title: Medium
                     url: https://medium.com/@l-you
-
-      - size: full
-        widgets:
-          - type: group
-            widgets:
-              - type: repository
-                repository: RevoTale/next-scroll-restorer
-                pull-requests-limit: 5
-                issues-limit: 3
-                commits-limit: 3
-              - type: repository
-                repository: RevoTale/obsidian-folder-by-tags-distributor
-                pull-requests-limit: 5
-                issues-limit: 3
-                commits-limit: 3
-              - type: repository
-                repository: RevoTale/react-grecaptcha-v3
-                pull-requests-limit: 5
-                issues-limit: 3
-                commits-limit: 3
           - type: server-stats
             servers:
               - type: local
                 name: Services
+
+          
 
       - size: small
         widgets:
