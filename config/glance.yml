@@ -132,3 +132,11 @@ pages:
   #     - size: small
   #       widgets:
   #         # Add widgets here
+document:
+  app-name: "RevoTale Dashboard"
+  logo-text: "RevoTale"
+  favicon-url: https://revotale.com/favicon-32x32.png
+  logo-url: https://revotale.com/android-chrome-512x512.png
+  app-icon-url: https://revotale.com/android-chrome-512x512.png
+  head: |
+    <link rel="canonical" href="https://board.revotale.com" />
