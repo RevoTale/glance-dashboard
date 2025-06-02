@@ -36,6 +36,8 @@ pages:
                 url: https://cms.revotale.com/admin
               - title: Watcharr
                 url: https://tv.revotale.com
+              - title: S3 Storage
+                url: https://s3.revotale.com/minio/health/live
               - title: Analytics
                 url: https://revotale.com/stats/api/heartbeat
           - type: bookmarks
